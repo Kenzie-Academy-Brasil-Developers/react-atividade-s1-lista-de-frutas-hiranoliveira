@@ -15,11 +15,9 @@ const Fruits = () => {
   const totalPrice = fruits.reduce((acc, currentValue) => {
     return currentValue.price + acc;
   }, 0);
-
-  console.log({ totalPrice });
   return (
     <>
-      <p> {totalPrice}</p>
+      <p> Total price = {totalPrice}</p>
       <ul>{nomesFrutas}</ul>
       <button className="button" onClick={() => setFruits(filterRedFruits)}>
         RED FRUITS ONLY
